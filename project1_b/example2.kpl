@@ -1,0 +1,25 @@
+PROGRAM Example2; /* Factorial */
+'I don''''t know'
+'$$'
+A<>7
+D><2
+000123444555
+99999999999999
+VAR n : Integer;
+Function F(n : Integer) : Integer;
+  Begin
+    If n = 0 Then F := 1 Else F := N * F (N - 1);
+	n=00056789;
+  End;
+BEGIN
+Begin
+  For n := 1 To 7 Do
+    Begin
+      Call WriteLn;
+      Call WriteI( F(i));
+    End;
+tran_thEthinh
+_ThinhTT_123457891011121314
+_123456789123456789
+End. /* Factorial */
+
