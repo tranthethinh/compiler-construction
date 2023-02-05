@@ -1,0 +1,10 @@
+program exercise1; (* Factorial *) 
+var a: integer; b: integer; c:integer; 
+BEGIN 
+a := readi;b := readi;
+if a>b Then c:=a-b-1 Else c:=b-a-1
+if a=b then c:=0
+call writeln; 
+call writeI(c); 
+end; 
+END. (* Factorial *)

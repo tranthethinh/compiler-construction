@@ -1,0 +1,31 @@
+PROGRAM  EXERCISE3;  (* E3 *)
+
+TYPE T = INTEGER;
+VAR  A : ARRAY(. 10 .) OF T;
+     N : INTEGER;
+
+PROCEDURE INPUT;
+VAR I : INTEGER;
+BEGIN
+  N := READI;
+  FOR I := 1 TO N DO
+     A(.I.) := READI;
+END;
+
+PROCEDURE OUTPUT;
+VAR I : INTEGER; B : INTEGER;
+BEGIN
+  B:=0;
+  FOR I := 2 TO N DO
+     BEGIN
+       IF A(.1.)>A(.I.) THEN B=B+1;
+     END
+  CALL WRITELN;
+  CALL WRITEI(B);
+END;
+
+
+BEGIN
+       CALL INPUT;
+       CALL OUTPUT;
+END.  (* 3 *)

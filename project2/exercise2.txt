@@ -1,0 +1,22 @@
+Program exercise2; (* Factorial *)
+   
+Var a : Integer;b:Integer; c: Integer;d: Integer;
+
+Function F(k : Integer) : Integer;
+  Begin
+    If k>20 Then 
+    	BEGIN
+      	   IF K<100 THEN F:=1;
+    	END
+    ELSE F:=0;
+  End;
+
+Begin
+  d:=0;
+  a:=readI;
+  If F(a)=1 Then d:=d+1;
+  If F(b)=1 Then d:=d+1;
+  If F(c)=1 Then d:=d+1;
+  Call Writeln;
+  Call WriteI(d);
+End. (* Factorial *)

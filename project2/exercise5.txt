@@ -1,0 +1,37 @@
+PROGRAM  exercise5;  (* 5*)
+CONST MAX = 10;thinh=22;
+TYPE T = INTEGER;
+VAR  A : ARRAY(. 10 .) OF ARRAY(.10.) OF T;
+     N : INTEGER;
+     CH : CHAR;
+
+PROCEDURE INPUT;
+VAR I : INTEGER;
+BEGIN
+  N := READI;
+  FOR I := 1 TO N DO
+    FOR J:=1 TO N DO
+     A(.I.)(.J.) := READI;
+END;
+
+PROCEDURE OUTPUT;
+VAR I : INTEGER;
+BEGIN
+  FOR I := 1 TO N DO
+    FOR J:=I+1 TO N DO
+     BEGIN
+       IF A(.I.)(.J.)>0 THEN A:=1;
+     END;
+  IF A=1 THEN 
+	BEGIN
+	  CALL WRITEI(0);
+	END
+	ELSE CALL WRITEI(1);
+END;
+
+BEGIN
+     BEGIN
+       CALL INPUT;
+       CALL OUTPUT;
+     END;
+END.  (* 5 *)
